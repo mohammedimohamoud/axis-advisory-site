@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Axis Advisory — Practical ESG readiness for Saudi SMEs. Help your business respond to procurement, supply chain, and regulatory ESG demands." />
+  <title>Axis Advisory | ESG Readiness for Saudi SMEs</title>
+
+  <!-- Google Fonts: Cairo works for both Latin and Arabic scripts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER / NAVIGATION
+  ============================================================ -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-container container" aria-label="Main navigation">
+
+      <!-- Logo -->
+      <a href="#home" class="nav-logo" aria-label="Axis Advisory Home">
+        <img
+          src="https://lirp.cdn-website.com/4d7f48cc/dms3rep/multi/opt/Flat+Vector+Logo+Design+for+Axis+Advisory-b8d1af93-1920w.png"
+          alt="Axis Advisory Logo"
+          class="nav-logo-img"
+        />
+        <span class="nav-logo-text">Axis Advisory</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links" role="list">
+        <li><a href="#home"      class="nav-link" data-i18n="nav_home">Home</a></li>
+        <li><a href="#services"  class="nav-link" data-i18n="nav_services">Services</a></li>
+        <li><a href="#process"   class="nav-link" data-i18n="nav_approach">Our Approach</a></li>
+        <li><a href="#faq"       class="nav-link" data-i18n="nav_faq">FAQs</a></li>
+        <li><a href="#contact"   class="nav-link" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+
+      <!-- Right-side actions -->
+      <div class="nav-actions">
+        <!-- Language Toggle -->
+        <button
+          id="lang-toggle"
+          class="lang-toggle-btn"
+          aria-label="Switch language"
+          data-i18n="lang_toggle"
+        >العربية</button>
+
+        <!-- Primary CTA -->
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta" data-i18n="nav_cta">
+          Request Consultation
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <button
+        class="nav-hamburger"
+        id="nav-hamburger"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#home"      class="nav-link" data-i18n="nav_home">Home</a></li>
+        <li><a href="#services"  class="nav-link" data-i18n="nav_services">Services</a></li>
+        <li><a href="#process"   class="nav-link" data-i18n="nav_approach">Our Approach</a></li>
+        <li><a href="#faq"       class="nav-link" data-i18n="nav_faq">FAQs</a></li>
+        <li><a href="#contact"   class="nav-link" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+      <div class="mobile-menu-actions">
+        <button id="lang-toggle-mobile" class="lang-toggle-btn" data-i18n="lang_toggle">العربية</button>
+        <a href="#contact" class="btn btn-primary" data-i18n="nav_cta">Request Consultation</a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section id="home" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+
+      <!-- Badge (inspired by animated-hero pill badge) -->
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        <span data-i18n="hero_badge">Trusted ESG Partner for Saudi SMEs</span>
+      </div>
+
+      <!-- Animated headline with rotating words -->
+      <h1 class="hero-headline">
+        <span data-i18n="hero_headline_prefix">ESG Readiness for</span>
+        <span class="rotating-wrapper" aria-live="polite" aria-atomic="true">
+          <!-- Rotating words injected by JS -->
+          <span class="rotating-word active" id="rotating-word-0"></span>
+          <span class="rotating-word"         id="rotating-word-1"></span>
+          <span class="rotating-word"         id="rotating-word-2"></span>
+          <span class="rotating-word"         id="rotating-word-3"></span>
+          <span class="rotating-word"         id="rotating-word-4"></span>
+        </span>
+        <span data-i18n="hero_headline_suffix">That Want to Win</span>
+      </h1>
+
+      <p class="hero-sub" data-i18n="hero_sub">
+        Saudi buyers, government entities, and large corporates are now asking ESG questions at the procurement stage. We help you answer them — with practical systems built for your business, not theory.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary btn-lg" data-i18n="hero_cta_primary">
+          Request an ESG Readiness Consultation
+        </a>
+        <a href="#resources" class="btn btn-outline-light btn-lg" data-i18n="hero_cta_secondary">
+          Download Free Guide
+        </a>
+      </div>
+
+      <!-- Trust indicator strip -->
+      <div class="hero-trust">
+        <span data-i18n="hero_trust_1">✓ Vision 2030 aligned</span>
+        <span data-i18n="hero_trust_2">✓ Mostadam compatible</span>
+        <span data-i18n="hero_trust_3">✓ Tender-ready documentation</span>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PROBLEM SECTION
+  ============================================================ -->
+  <section id="problem" class="section section-light">
+    <div class="container">
+
+      <div class="section-label" data-i18n="problem_label">The Challenge</div>
+      <h2 class="section-headline" data-i18n="problem_headline">
+        ESG Pressure Is Now Reaching Saudi SMEs
+      </h2>
+      <p class="section-sub" data-i18n="problem_sub">
+        If your business supplies large corporates, government-linked projects, or international partners, you are already being evaluated on ESG — whether you are ready or not.
+      </p>
+
+      <!-- Pain points grid -->
+      <div class="pain-grid">
+
+        <div class="pain-card">
+          <div class="pain-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <h3 data-i18n="pain1_title">Procurement Forms Are Asking ESG Questions</h3>
+          <p data-i18n="pain1_body">Tender documents and supplier questionnaires now include sections on environmental policy, carbon footprint, social responsibility, and governance — and blank answers cost contracts.</p>
+        </div>
+
+        <div class="pain-card">
+          <div class="pain-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <h3 data-i18n="pain2_title">No Clear Guidance on What Is Actually Required</h3>
+          <p data-i18n="pain2_body">Most SMEs know ESG matters but lack clarity on which standards apply, what documentation is needed, and how to prioritise without wasting resources on the wrong things.</p>
+        </div>
+
+        <div class="pain-card">
+          <div class="pain-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3 data-i18n="pain3_title">Supply Chain ESG Requirements Are Cascading Down</h3>
+          <p data-i18n="pain3_body">Large Saudi corporates, government-linked entities, and international project developers are passing ESG requirements down their supply chains — reaching sub-contractors, manufacturers, and service providers.</p>
+        </div>
+
+      </div>
+
+      <!-- Statement block -->
+      <div class="problem-statement">
+        <p data-i18n="problem_statement">
+          <strong data-i18n="problem_statement_strong">The good news:</strong>
+          <span data-i18n="problem_statement_rest"> you do not need a large internal ESG team or a complex reporting system to respond confidently. You need a practical, right-sized framework that fits your business — and a clear roadmap to get there.</span>
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SERVICES SECTION
+  ============================================================ -->
+  <section id="services" class="section section-white">
+    <div class="container">
+
+      <div class="section-label" data-i18n="services_label">Our Services</div>
+      <h2 class="section-headline" data-i18n="services_headline">Three Pathways to ESG Readiness</h2>
+      <p class="section-sub" data-i18n="services_sub">
+        Whether you are just starting or aiming to differentiate through ESG, there is a clear, structured path forward.
+      </p>
+
+      <div class="services-grid">
+
+        <!-- Service 1: Foundation -->
+        <div class="service-card service-card--foundation">
+          <div class="service-card-header">
+            <div class="service-tier-label" data-i18n="s1_tier">Tier 1</div>
+            <h3 class="service-title" data-i18n="s1_title">Foundation</h3>
+            <p class="service-desc" data-i18n="s1_desc">
+              For SMEs beginning their ESG journey. Build the basic framework you need to respond to initial compliance requirements and supplier questionnaires.
+            </p>
+          </div>
+          <div class="service-benefit">
+            <div class="service-benefit-label" data-i18n="service_benefit_label">Business Benefit</div>
+            <p data-i18n="s1_benefit">Stop losing contracts because of blank ESG sections. Get a credible baseline in place that shows buyers you are taking this seriously.</p>
+          </div>
+          <ul class="service-deliverables" aria-label="Deliverables">
+            <li data-i18n="s1_d1">ESG maturity assessment tailored to your operations</li>
+            <li data-i18n="s1_d2">Basic governance framework and policy documentation</li>
+            <li data-i18n="s1_d3">Initial carbon footprint measurement (Scope 1 &amp; 2)</li>
+            <li data-i18n="s1_d4">Compliance checklist aligned with Saudi regulations</li>
+            <li data-i18n="s1_d5">Clear roadmap for ESG reporting and management</li>
+          </ul>
+          <div class="service-timeline">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span data-i18n="s1_timeline">Typically completed in 6–8 weeks</span>
+          </div>
+          <a href="#contact" class="btn btn-primary service-cta" data-i18n="service_cta">Start with Foundation</a>
+        </div>
+
+        <!-- Service 2: Mostadam Alignment -->
+        <div class="service-card service-card--mostadam service-card--featured">
+          <div class="service-featured-badge" data-i18n="service_popular">Most Requested</div>
+          <div class="service-card-header">
+            <div class="service-tier-label" data-i18n="s2_tier">Tier 2</div>
+            <h3 class="service-title" data-i18n="s2_title">Mostadam Alignment</h3>
+            <p class="service-desc" data-i18n="s2_desc">
+              For companies working with Saudi real estate, infrastructure, or large project ecosystems. Align your ESG systems with Mostadam requirements and Saudi project compliance standards.
+            </p>
+          </div>
+          <div class="service-benefit">
+            <div class="service-benefit-label" data-i18n="service_benefit_label">Business Benefit</div>
+            <p data-i18n="s2_benefit">Become a credible supply chain partner on major Saudi projects. Meet the ESG documentation requirements that are increasingly expected for project participation.</p>
+          </div>
+          <ul class="service-deliverables" aria-label="Deliverables">
+            <li data-i18n="s2_d1">Detailed Mostadam compliance gap analysis</li>
+            <li data-i18n="s2_d2">ESG system integration for Saudi project requirements</li>
+            <li data-i18n="s2_d3">Scope 3 emissions roadmap development</li>
+            <li data-i18n="s2_d4">Tender-ready ESG documentation package</li>
+            <li data-i18n="s2_d5">Training on ESG governance for key staff</li>
+          </ul>
+          <div class="service-timeline">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span data-i18n="s2_timeline">Delivered over 8–12 weeks</span>
+          </div>
+          <a href="#contact" class="btn btn-primary service-cta" data-i18n="s2_cta">Align with Mostadam</a>
+        </div>
+
+        <!-- Service 3: Competitive Advantage -->
+        <div class="service-card service-card--competitive">
+          <div class="service-card-header">
+            <div class="service-tier-label" data-i18n="s3_tier">Tier 3</div>
+            <h3 class="service-title" data-i18n="s3_title">Competitive Advantage</h3>
+            <p class="service-desc" data-i18n="s3_desc">
+              For SMEs ready to use ESG as a commercial asset. Build investor-grade strategy and disclosure that improves procurement scoring and positions you ahead of competitors.
+            </p>
+          </div>
+          <div class="service-benefit">
+            <div class="service-benefit-label" data-i18n="service_benefit_label">Business Benefit</div>
+            <p data-i18n="s3_benefit">Win larger contracts, attract better partners, and improve investor confidence by demonstrating a mature, commercially linked ESG strategy.</p>
+          </div>
+          <ul class="service-deliverables" aria-label="Deliverables">
+            <li data-i18n="s3_d1">Advanced ESG strategy linked to business goals</li>
+            <li data-i18n="s3_d2">Enhanced carbon management including Scope 3</li>
+            <li data-i18n="s3_d3">ESG risk and opportunity mapping</li>
+            <li data-i18n="s3_d4">Support for procurement scoring improvement</li>
+            <li data-i18n="s3_d5">Ongoing ESG performance monitoring plan</li>
+          </ul>
+          <div class="service-timeline">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span data-i18n="s3_timeline">Ongoing engagement — custom timeline</span>
+          </div>
+          <a href="#contact" class="btn btn-primary service-cta" data-i18n="s3_cta">Build Your Advantage</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PROCESS SECTION (4-Step Framework)
+  ============================================================ -->
+  <section id="process" class="section section-dark">
+    <div class="container">
+
+      <div class="section-label section-label--light" data-i18n="process_label">Our Approach</div>
+      <h2 class="section-headline section-headline--light" data-i18n="process_headline">
+        Our 4-Step ESG Framework
+      </h2>
+      <p class="section-sub section-sub--light" data-i18n="process_sub">
+        A structured, transparent methodology designed to embed ESG into your business operations without disrupting day-to-day activity.
+      </p>
+
+      <div class="process-steps">
+
+        <div class="process-step">
+          <div class="process-step-img">
+            <img
+              src="https://lirp.cdn-website.com/4d7f48cc/dms3rep/multi/opt/73a92e56-b640-4403-b272-e9651b56e000-1920w.jpg"
+              alt="ESG Assessment meeting"
+              loading="lazy"
+            />
+          </div>
+          <div class="process-step-content">
+            <div class="process-step-number">01</div>
+            <h3 data-i18n="step1_title">Assess</h3>
+            <p data-i18n="step1_body">We evaluate your current ESG maturity, identify compliance exposure, and map the specific procurement or supply chain pressures your business faces. No assumptions — everything is calibrated to your industry and situation.</p>
+          </div>
+        </div>
+
+        <div class="process-step process-step--reverse">
+          <div class="process-step-img">
+            <img
+              src="https://lirp.cdn-website.com/4d7f48cc/dms3rep/multi/opt/740838f7-9fbc-4dab-9386-bc49065238c6-1920w.jpg"
+              alt="ESG Structure design"
+              loading="lazy"
+            />
+          </div>
+          <div class="process-step-content">
+            <div class="process-step-number">02</div>
+            <h3 data-i18n="step2_title">Structure</h3>
+            <p data-i18n="step2_body">We design a right-sized ESG framework aligned with Saudi regulatory expectations and your industry's requirements. The result is a practical governance structure that fits your operations — not an off-the-shelf template.</p>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <div class="process-step-img">
+            <img
+              src="https://lirp.cdn-website.com/4d7f48cc/dms3rep/multi/opt/8026a828-27b0-4db7-b91e-6ce3885991e8-1920w.jpg"
+              alt="ESG Execution and integration"
+              loading="lazy"
+            />
+          </div>
+          <div class="process-step-content">
+            <div class="process-step-number">03</div>
+            <h3 data-i18n="step3_title">Execute</h3>
+            <p data-i18n="step3_body">We integrate governance, policies, KPI tracking, and accountability into your daily operations. Your team receives the guidance they need to run ESG processes with confidence — without relying on external consultants indefinitely.</p>
+          </div>
+        </div>
+
+        <div class="process-step process-step--reverse">
+          <div class="process-step-img">
+            <img
+              src="https://lirp.cdn-website.com/4d7f48cc/dms3rep/multi/opt/98af18ff-8bdd-461b-8880-42c20ece7a76-1920w.jpg"
+              alt="ESG Strengthen and improve"
+              loading="lazy"
+            />
+          </div>
+          <div class="process-step-content">
+            <div class="process-step-number">04</div>
+            <h3 data-i18n="step4_title">Strengthen</h3>
+            <p data-i18n="step4_body">We enhance your reporting, documentation, and performance metrics so your ESG position continues to improve — keeping you compliant, competitive, and credible as requirements evolve.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="process-cta-wrap">
+        <a href="#contact" class="btn btn-primary btn-lg" data-i18n="process_cta">Book a Strategy Call</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       WHY US / CREDIBILITY SECTION
+  ============================================================ -->
+  <section id="why-us" class="section section-light">
+    <div class="container">
+
+      <div class="why-us-grid">
+
+        <div class="why-us-content">
+          <div class="section-label" data-i18n="whyus_label">Why Axis Advisory</div>
+          <h2 class="section-headline" data-i18n="whyus_headline">
+            Practical ESG. Commercially Aware. Regionally Grounded.
+          </h2>
+          <p data-i18n="whyus_body1">
+            Axis Advisory delivers structured ESG systems designed specifically for Saudi SMEs facing regulatory and supply chain demands. Our approach integrates Mostadam compliance and governance-led frameworks into your operations — with clear timelines and measurable outcomes.
+          </p>
+          <p data-i18n="whyus_body2">
+            We apply insights from large-scale projects to create scalable, tender-ready ESG solutions that protect your revenue and improve procurement scoring — without unnecessary complexity or jargon.
+          </p>
+
+          <div class="differentiators">
+            <div class="diff-item">
+              <div class="diff-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div>
+                <strong data-i18n="diff1_title">Vision 2030 Aligned</strong>
+                <p data-i18n="diff1_body">We understand the regulatory direction Saudi Arabia is moving in and build ESG systems that track with it.</p>
+              </div>
+            </div>
+            <div class="diff-item">
+              <div class="diff-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div>
+                <strong data-i18n="diff2_title">Commercial, Not Academic</strong>
+                <p data-i18n="diff2_body">Our focus is on outcomes that protect revenue, improve procurement scoring, and reduce commercial risk — not on theory.</p>
+              </div>
+            </div>
+            <div class="diff-item">
+              <div class="diff-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div>
+                <strong data-i18n="diff3_title">Right-Sized for SMEs</strong>
+                <p data-i18n="diff3_body">We do not apply large-enterprise frameworks to small businesses. Every engagement is calibrated to your size, sector, and current maturity level.</p>
+              </div>
+            </div>
+            <div class="diff-item">
+              <div class="diff-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div>
+                <strong data-i18n="diff4_title">Remote-Capable Across the GCC</strong>
+                <p data-i18n="diff4_body">We work with SMEs across Saudi Arabia and the GCC using structured diagnostics and digital collaboration — no site visit required to get started.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-primary" data-i18n="whyus_cta">Start the Conversation</a>
+        </div>
+
+        <div class="why-us-image">
+          <img
+            src="https://lirp.cdn-website.com/4d7f48cc/dms3rep/multi/opt/a35af53b-8545-4bbb-803f-311da60fcd54-1920w.jpg"
+            alt="Axis Advisory team at office meeting"
+            loading="lazy"
+          />
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       LEAD MAGNET SECTION
+  ============================================================ -->
+  <section id="resources" class="section section-teal">
+    <div class="container">
+      <div class="lead-magnet-grid">
+
+        <div class="lead-magnet-content">
+          <div class="section-label section-label--light" data-i18n="lm_label">Free Resource</div>
+          <h2 class="section-headline section-headline--light" data-i18n="lm_headline">
+            Saudi SME ESG Readiness: The 10 Items Buyers Now Ask For
+          </h2>
+          <p class="section-sub section-sub--light" data-i18n="lm_body">
+            Buyers, procurement teams, and project developers across Saudi Arabia and the GCC are now asking suppliers a standard set of ESG-related questions. This practical guide tells you exactly what those 10 items are — and what you need to have in place to answer them.
+          </p>
+          <ul class="lead-magnet-list">
+            <li data-i18n="lm_item1">What procurement questionnaires now include about ESG</li>
+            <li data-i18n="lm_item2">The minimum documentation most buyers expect</li>
+            <li data-i18n="lm_item3">Where Saudi SMEs are most commonly unprepared</li>
+            <li data-i18n="lm_item4">How to respond even if you are at an early stage</li>
+          </ul>
+          <!-- Placeholder link — replace # with actual PDF URL when ready -->
+          <a href="#" class="btn btn-white btn-lg" data-i18n="lm_cta">Download the Free Guide</a>
+          <p class="lead-magnet-note" data-i18n="lm_note">No registration required. Instant download.</p>
+        </div>
+
+        <div class="lead-magnet-visual">
+          <div class="guide-mockup">
+            <div class="guide-mockup-inner">
+              <div class="guide-mockup-top">
+                <span data-i18n="lm_guide_label">ESG Readiness Guide</span>
+              </div>
+              <div class="guide-mockup-title" data-i18n="lm_guide_title">
+                The 10 Items Buyers Now Ask For
+              </div>
+              <div class="guide-mockup-sub" data-i18n="lm_guide_sub">Saudi SME Edition</div>
+              <div class="guide-mockup-list">
+                <div class="guide-line"></div>
+                <div class="guide-line guide-line--short"></div>
+                <div class="guide-line"></div>
+                <div class="guide-line guide-line--short"></div>
+                <div class="guide-line"></div>
+              </div>
+              <div class="guide-mockup-brand">Axis Advisory</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FAQ SECTION
+  ============================================================ -->
+  <section id="faq" class="section section-white">
+    <div class="container">
+
+      <div class="section-label" data-i18n="faq_label">FAQs</div>
+      <h2 class="section-headline" data-i18n="faq_headline">
+        Common Questions About ESG for Saudi SMEs
+      </h2>
+
+      <div class="faq-list" role="list">
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="faq1_q">Which industries does Axis Advisory support?</span>
+            <span class="faq-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq1_a">We support construction subcontractors, logistics operators, engineering service firms, manufacturing businesses, facilities management companies, and food supply chains — as well as healthcare providers, professional services firms, and retail SMEs with multi-site operations. Our ESG systems are tailored to the specific regulatory and procurement requirements of each sector.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="faq2_q">Is Axis Advisory a certification body for ESG?</span>
+            <span class="faq-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq2_a">No. We provide structured ESG frameworks and compliance systems but do not issue certifications. Our focus is on practical implementation and readiness aligned with Saudi regulations and international standards — so your business can respond to buyer requirements with credible, auditable evidence.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="faq3_q">How quickly can we have credible ESG systems in place?</span>
+            <span class="faq-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq3_a">Foundation-level systems are typically in place within 6 to 8 weeks. Full Mostadam-aligned implementation takes 8 to 12 weeks depending on your current maturity. The result is operational governance, reporting documentation, and compliance materials ready for immediate use in tenders and audits.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="faq4_q">Can you support our business remotely?</span>
+            <span class="faq-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq4_a">Yes. We work remotely with SMEs across Saudi Arabia and the GCC. Our process uses structured diagnostics and digital collaboration tools, meaning we can deliver governance-led ESG systems without requiring on-site visits. Many of our engagements are conducted entirely online.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="faq5_q">Do we need a large internal team to manage ESG after the engagement?</span>
+            <span class="faq-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq5_a">No. One of our core principles is that ESG systems should be manageable with your existing team. We build frameworks that your current staff can operate — with clear responsibilities, simple tracking tools, and the training to use them. You should not need to hire a dedicated ESG manager to stay compliant.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section id="contact" class="section section-light">
+    <div class="container">
+
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <div class="section-label" data-i18n="contact_label">Get in Touch</div>
+          <h2 class="section-headline" data-i18n="contact_headline">
+            Request Your ESG Readiness Consultation
+          </h2>
+          <p data-i18n="contact_body">
+            During the consultation, we assess your current ESG position, outline a clear implementation path tailored to your business, and explain how to meet Saudi regulatory and supply chain requirements — with confidence and without unnecessary complexity.
+          </p>
+          <p data-i18n="contact_body2">
+            The conversation is straightforward and designed to give you a clear picture of where you stand and what is needed.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:esg@axisadvisoryltd.com">esg@axisadvisoryltd.com</a>
+            </div>
+            <div class="contact-detail-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.56 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <a href="tel:+966553522940">+966 55 352 2940</a>
+            </div>
+            <div class="contact-detail-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span data-i18n="contact_location">Riyadh, Saudi Arabia</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ======================================================
+             CONTACT FORM
+             To connect this form to a service, choose one of:
+             1. Formspree: add action="https://formspree.io/f/YOUR_ID" method="POST"
+             2. Netlify: add netlify attribute to <form> tag
+             3. Getform.io: add action="https://getform.io/f/YOUR_ID" method="POST"
+        ====================================================== -->
+        <form
+          class="contact-form"
+          id="contact-form"
+          novalidate
+          aria-label="ESG Consultation Request Form"
+          <!-- FORM SERVICE: Replace the comment above with your form action attribute -->
+          <!-- Example (Formspree): action="https://formspree.io/f/YOUR_FORM_ID" method="POST" -->
+        >
+          <div class="form-group">
+            <label for="name" data-i18n="form_name_label">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              autocomplete="name"
+              data-i18n-placeholder="form_name_placeholder"
+              placeholder="Your full name"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="company" data-i18n="form_company_label">Company Name</label>
+            <input
+              type="text"
+              id="company"
+              name="company"
+              required
+              autocomplete="organization"
+              data-i18n-placeholder="form_company_placeholder"
+              placeholder="Your company"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="role" data-i18n="form_role_label">Your Role</label>
+            <select id="role" name="role">
+              <option value="" data-i18n="form_role_default">Select your role</option>
+              <option value="owner" data-i18n="form_role_owner">Owner / Founder</option>
+              <option value="coo" data-i18n="form_role_coo">COO</option>
+              <option value="cfo" data-i18n="form_role_cfo">CFO</option>
+              <option value="compliance" data-i18n="form_role_compliance">Head of Compliance</option>
+              <option value="procurement" data-i18n="form_role_procurement">Procurement Director</option>
+              <option value="other" data-i18n="form_role_other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="email" data-i18n="form_email_label">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              autocomplete="email"
+              data-i18n-placeholder="form_email_placeholder"
+              placeholder="your@email.com"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message" data-i18n="form_message_label">Tell us about your situation</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              data-i18n-placeholder="form_message_placeholder"
+              placeholder="Briefly describe your ESG challenge or question..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg form-submit" data-i18n="form_submit">
+            Request ESG Readiness Consultation
+          </button>
+
+          <p class="form-privacy" data-i18n="form_privacy">
+            Your information is kept confidential and used only to respond to your enquiry.
+          </p>
+
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <img
+            src="https://lirp.cdn-website.com/4d7f48cc/dms3rep/multi/opt/Flat+Vector+Logo+Design+for+Axis+Advisory-b8d1af93-1920w.png"
+            alt="Axis Advisory"
+            class="footer-logo"
+          />
+          <p class="footer-tagline" data-i18n="footer_tagline">Practical ESG for Saudi SMEs</p>
+          <p class="footer-location">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-i18n="footer_location">Riyadh, Saudi Arabia</span>
+          </p>
+          <!-- LinkedIn placeholder — replace # with actual LinkedIn URL -->
+          <a href="#" class="footer-linkedin" aria-label="Axis Advisory on LinkedIn" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 data-i18n="footer_nav_title">Navigation</h4>
+          <ul role="list">
+            <li><a href="#home"     data-i18n="nav_home">Home</a></li>
+            <li><a href="#services" data-i18n="nav_services">Services</a></li>
+            <li><a href="#process"  data-i18n="nav_approach">Our Approach</a></li>
+            <li><a href="#faq"      data-i18n="nav_faq">FAQs</a></li>
+            <li><a href="#contact"  data-i18n="nav_contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 data-i18n="footer_services_title">Services</h4>
+          <ul role="list">
+            <li><a href="#services" data-i18n="s1_title">Foundation</a></li>
+            <li><a href="#services" data-i18n="s2_title">Mostadam Alignment</a></li>
+            <li><a href="#services" data-i18n="s3_title">Competitive Advantage</a></li>
+            <li><a href="#resources" data-i18n="footer_guide_link">Free ESG Guide</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact-col">
+          <h4 data-i18n="footer_contact_title">Contact</h4>
+          <a href="mailto:esg@axisadvisoryltd.com">esg@axisadvisoryltd.com</a>
+          <a href="tel:+966553522940">+966 55 352 2940</a>
+          <a href="#contact" class="btn btn-primary btn-sm footer-cta" data-i18n="footer_cta">Request Consultation</a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; <span id="footer-year">2026</span>
+          <span data-i18n="footer_copy"> Axis Advisory. All rights reserved. Riyadh, Saudi Arabia.</span>
+        </p>
+        <p class="footer-copy-ar" data-i18n="footer_copy_ar">
+          جميع الحقوق محفوظة — أكسيس أدفايزوري
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- Script -->
+  <script src="script.js"></script>
+
+</body>
+</html>
