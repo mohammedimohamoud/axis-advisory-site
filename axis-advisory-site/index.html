@@ -475,8 +475,7 @@
             <li data-i18n="lm_item3">Where Saudi SMEs are most commonly unprepared</li>
             <li data-i18n="lm_item4">How to respond even if you are at an early stage</li>
           </ul>
-          <!-- Placeholder link — replace # with actual PDF URL when ready -->
-          <a href="#" class="btn btn-white btn-lg" data-i18n="lm_cta">Download the Free Guide</a>
+          <a href="Saudi-SME-ESG-Readiness-Guide.pdf" download="Saudi-SME-ESG-Readiness-Guide.pdf" class="btn btn-white btn-lg" data-i18n="lm_cta">Download the Free Guide</a>
           <p class="lead-magnet-note" data-i18n="lm_note">No registration required. Instant download.</p>
         </div>
 
@@ -621,22 +620,18 @@
           </div>
         </div>
 
-        <!-- ======================================================
-             CONTACT FORM
-             To connect this form to a service, choose one of:
-             1. Formspree: add action="https://formspree.io/f/YOUR_ID" method="POST"
-             2. Netlify: add netlify attribute to <form> tag
-             3. Getform.io: add action="https://getform.io/f/YOUR_ID" method="POST"
-        ====================================================== -->
         <form
           class="contact-form"
           id="contact-form"
           novalidate
           aria-label="ESG Consultation Request Form"
-          <!-- FORM SERVICE: Replace the comment above with your form action attribute -->
-          <!-- Example (Formspree): action="https://formspree.io/f/YOUR_FORM_ID" method="POST" -->
         >
-          <div class="form-group">
+          <!-- Honeypot: hidden from humans, bots fill it — submission is silently discarded -->
+          <div class="form-honeypot" aria-hidden="true">
+            <input type="text" name="_gotcha" id="_gotcha" tabindex="-1" autocomplete="off" />
+          </div>
+
+          <div class="form-group" id="fg-name">
             <label for="name" data-i18n="form_name_label">Full Name</label>
             <input
               type="text"
@@ -647,9 +642,10 @@
               data-i18n-placeholder="form_name_placeholder"
               placeholder="Your full name"
             />
+            <span class="form-field-error" id="err-name" role="alert" aria-live="polite"></span>
           </div>
 
-          <div class="form-group">
+          <div class="form-group" id="fg-company">
             <label for="company" data-i18n="form_company_label">Company Name</label>
             <input
               type="text"
@@ -660,22 +656,21 @@
               data-i18n-placeholder="form_company_placeholder"
               placeholder="Your company"
             />
+            <span class="form-field-error" id="err-company" role="alert" aria-live="polite"></span>
           </div>
 
           <div class="form-group">
-            <label for="role" data-i18n="form_role_label">Your Role</label>
-            <select id="role" name="role">
-              <option value="" data-i18n="form_role_default">Select your role</option>
-              <option value="owner" data-i18n="form_role_owner">Owner / Founder</option>
-              <option value="coo" data-i18n="form_role_coo">COO</option>
-              <option value="cfo" data-i18n="form_role_cfo">CFO</option>
-              <option value="compliance" data-i18n="form_role_compliance">Head of Compliance</option>
-              <option value="procurement" data-i18n="form_role_procurement">Procurement Director</option>
-              <option value="other" data-i18n="form_role_other">Other</option>
+            <label for="service" data-i18n="form_service_label">Service of Interest</label>
+            <select id="service" name="service">
+              <option value="" data-i18n="form_service_default">Select a service</option>
+              <option value="foundation" data-i18n="form_service_foundation">Foundation (Tier 1)</option>
+              <option value="mostadam" data-i18n="form_service_mostadam">Mostadam Alignment (Tier 2)</option>
+              <option value="competitive" data-i18n="form_service_competitive">Competitive Advantage (Tier 3)</option>
+              <option value="unsure" data-i18n="form_service_unsure">Not sure yet</option>
             </select>
           </div>
 
-          <div class="form-group">
+          <div class="form-group" id="fg-email">
             <label for="email" data-i18n="form_email_label">Email Address</label>
             <input
               type="email"
@@ -686,6 +681,7 @@
               data-i18n-placeholder="form_email_placeholder"
               placeholder="your@email.com"
             />
+            <span class="form-field-error" id="err-email" role="alert" aria-live="polite"></span>
           </div>
 
           <div class="form-group">
@@ -699,6 +695,9 @@
             ></textarea>
           </div>
 
+          <!-- Form-level feedback (server errors) -->
+          <div class="form-message form-message--error" id="form-error" role="alert" aria-live="polite" hidden></div>
+
           <button type="submit" class="btn btn-primary btn-lg form-submit" data-i18n="form_submit">
             Request ESG Readiness Consultation
           </button>
@@ -708,6 +707,15 @@
           </p>
 
         </form>
+
+        <!-- Success state — shown after successful submission -->
+        <div class="form-success" id="form-success" hidden aria-live="polite">
+          <div class="form-success__icon" aria-hidden="true">✓</div>
+          <h3 class="form-success__title" data-i18n="form_success_title">Thank you!</h3>
+          <p class="form-success__body" data-i18n="form_success_body">
+            We've received your request and will be in touch within one business day.
+          </p>
+        </div>
 
       </div>
     </div>
